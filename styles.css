@@ -1,0 +1,38 @@
+:root {
+    /* Colors */
+    --colors-green: hsl(75, 94%, 57%);
+    --colors-white: hsl(0, 0%, 100%);
+    --colors-grey-700: hsl(0, 0%, 20%);
+    --colors-grey-800: hsl(0, 0%, 12%);
+    --colors-grey-900: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --font-family:'Inter', sans-serif;
+    --font-weight-medium: ;
+    --font-weight-extrabold: ;
+}
+
+    /* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    background-color: var(--colors-grey-900);
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
