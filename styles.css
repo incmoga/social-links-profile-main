@@ -150,7 +150,7 @@ body {
 }
 
 .attribution {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     text-align: center;
     margin-top: clamp(1.5rem, 6.4vw, 2.5rem);
     color: var(--colors-grey-700);
