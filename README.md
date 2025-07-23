@@ -19,7 +19,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### The challenge
 
 Users should be able to:
-
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
@@ -57,10 +56,55 @@ Users should be able to:
 - Responsive design
 - CSS transitions for hover effects
 - Variable fonts
+- clamp() function for fluid sizing
+- Accessible focus states
 
 ### What I learned
 
+1. **Responsive design with clamp()**:
+```css
+/* Fluid sizing without media queries */
+.profile-card {
+  width: clamp(20.4375rem, 87.2vw, 24rem);
+  padding: clamp(1.5rem, 6.4vw, 2.5rem);
+}
+```
+
+I successfully implemented responsive layouts using CSS clamp() function, allowing elements to scale smoothly between minimum, preferred, and maximum values without media queries.
+
+2. **Avatar styling techniques**:
+```css
+/* Circular avatar with proper image scaling */
+.profile-info__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-info__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
+
+3. **Advanced focus states**:
+```css
+/* Accessible focus states */
+.social-links__item:focus-within {
+  background-color: var(--colors-green);
+}
+.social-links__item:focus-within .social-links__link {
+  color: var(--colors-grey-900);
+}
+```
+
+Implemented accessible focus states using :focus-within pseudo-class that works for keyboard navigation while maintaining visual consistency with hover states.
+
 ### Continued development
+In future projects, I want to explore in depth:
+- Implement CSS Grid for complex layout scenarios
+- Explore container queries for component-based responsiveness
 
 ## Author
 
